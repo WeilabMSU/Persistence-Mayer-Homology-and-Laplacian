@@ -92,7 +92,7 @@ def plot_betti_lap_channels(filename,radius,n):
     fig.colorbar(pos3,ax=axes[1,0])
     fig.colorbar(pos4,ax=axes[1,1])
     return fig,axes
-
+from persistence import calculate
 def process(file,radius,n):
 
     filename = file.split('.')[0]
