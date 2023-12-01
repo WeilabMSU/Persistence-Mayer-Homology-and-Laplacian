@@ -73,7 +73,7 @@ def mat_multiply(bnd_op,dim,q):
 
     return f
 
-def calculate_betti_laplacian(bnd_op,n,q,max_dim=2):#ker d^q/imd^(n-q) for q<n
+def calculate_betti_laplacian(bnd_op,n,q,max_dim=1):#ker d^q/imd^(n-q) for q<n
     #print(q)
     #print(bnd)
     dim = bnd_op.max_dim
@@ -83,7 +83,7 @@ def calculate_betti_laplacian(bnd_op,n,q,max_dim=2):#ker d^q/imd^(n-q) for q<n
     gamma_max = []
     gamma_mean = []
     gamma_std = []
-    for i in range(max_dim):#only consider b0,b1 if max_dim =2
+    for i in range(max_dim+1):#only consider b0,b1,l0,l1 if max_dim =1
         #print("f")
         f = mat_multiply(bnd_op,i,q)#f = d^q
         #print("g")
@@ -123,7 +123,7 @@ class boundary_operators():
     
     
 
-def betti_laplacian(X,n,max_dim=2):
+def betti_laplacian(X,n,max_dim=1):
     Bettis=[]
     Gmin=[]
     Gmax=[]
