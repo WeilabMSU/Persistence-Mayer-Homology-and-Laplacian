@@ -38,8 +38,8 @@ str_lap = "The smallest positive eigenvalue of Mayer Laplacian {} at stage {} is
 
 for q in range(1,N):
     for i,(b,l) in enumerate(zip(Betti[q-1],Gmin[q-1])):
-        print(str_betti.format(i,q+1),b)
-        print(str_betti.format(i,q+1),l)
+        print(str_betti.format(i,q),b)
+        print(str_betti.format(i,q),l)
 ```
 2. Persistent Mayer homology and Laplacian:
    the following example is the same as the 'main.py' file
