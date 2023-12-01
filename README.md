@@ -46,7 +46,7 @@ for q in range(1,N):
 ```
 import numpy as np
 from persistence import calculate
-from functions import read_file,plot_betti_lap,plot_betti_lap_channels,process
+from functions import read_file,process
 
 ##chose your example
 file = 'X1.xy' # the 'xy' file, 'xyz' file or 'mol2' file you want to study,including 'X1.xy','X2.xyz','C20.xyz','C60.xyz','CB7.mol2'.
