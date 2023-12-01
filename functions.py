@@ -92,3 +92,28 @@ def plot_betti_lap_channels(filename,radius,n):
     fig.colorbar(pos3,ax=axes[1,0])
     fig.colorbar(pos4,ax=axes[1,1])
     return fig,axes
+
+def process(file,radius,n):
+
+    filename = file.split('.')[0]
+    fileformat= file.split('.')[1]
+    filepath = './data/'+file
+    pointcloud = read_file(filepath)
+    distances = radius*2
+
+    
+    calculate(pointcloud,distances,n,filename)
+    fig1,axes1 = plot_betti_lap(filename,radius,n)
+    fig2,axes2 =plot_betti_lap_channels(filename,radius,n)
+    
+    axes1[0,0].set_ylabel('$\\beta_0$',rotation=0)
+    axes1[0,1].set_ylabel('$\\beta_1$',rotation=0)
+    axes1[1,0].set_ylabel('$\\lambda_0$',rotation=0)
+    axes1[1,1].set_ylabel('$\\lambda_1$',rotation=0)
+    
+    axes2[0,0].set_ylabel('$\\beta_0$',rotation=0)
+    axes2[0,1].set_ylabel('$\\beta_1$',rotation=0)
+    axes2[1,0].set_ylabel('$\\lambda_0$',rotation=0)
+    axes2[1,1].set_ylabel('$\\lambda_1$',rotation=0)
+    
+    return fig1,axes1,fig2,axes2
