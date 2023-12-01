@@ -54,7 +54,7 @@ radius = np.linspace(0,2,201)# filtration radius.
 n = 7 # N value for Mayer homology/Laplacian.
 ##
 fig1,axes1,fig2,axes2 = process(file,radius,n)
-'''
+```
 ### Citing
  To be added...
  
