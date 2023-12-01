@@ -43,7 +43,7 @@ for q in range(1,N):
 ```
 2. Persistent Mayer homology and Laplacian:
    the following example is the same as the 'main.py' file
-"""
+'''
 import numpy as np
 from persistence import calculate
 from functions import read_file,plot_betti_lap,plot_betti_lap_channels,process
@@ -54,7 +54,7 @@ radius = np.linspace(0,2,201)# filtration radius.
 n = 7 # N value for Mayer homology/Laplacian.
 ##
 fig1,axes1,fig2,axes2 = process(file,radius,n)
-
+'''
 ### Citing
  To be added...
  
