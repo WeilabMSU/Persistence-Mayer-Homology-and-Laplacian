@@ -59,7 +59,7 @@ fig1,axes1,fig2,axes2 = process(file,radius,n)
  To be added...
  
 ### Contributors
-The persistence Mayer homology and Laplacian code was created by [Li Shen](https://github.com/shenli0920)) and is maintained by [Li Shen](https://github.com/shenli0920)), Jian Liu and [Weilab](https://github.com/msuweilab) at MSU Math.
+The persistence Mayer homology and Laplacian code was created by [Li Shen](https://github.com/shenli0920) and is maintained by [Li Shen](https://github.com/shenli0920), Jian Liu and [Weilab](https://github.com/msuweilab) at MSU Math.
 
 ### License
 All codes released in this study is under the MIT License.
